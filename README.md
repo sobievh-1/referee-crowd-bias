@@ -107,7 +107,7 @@ Added after seeing the results ([notebooks/06_exploratory_mechanism.ipynb](noteb
 
 ## A referee's view
 
-*I have refereed 300+ matches since 2023.*
+*I have refereed 200+ matches since 2023.*
 
 > This matches my experience. Refereeing involves a lot of "politics", that is, managing the match with the crowd in mind: for example, giving the marginal call to a team near its own bench, or in other sensitive areas of the pitch. A referee has to read the game and the emotions. There is nothing unusual about it; it is good management of the match and of the pressure on the referee.
 
@@ -166,4 +166,4 @@ Then run the notebooks in order:
 
 ## Author
 
-**Szymon Sobiech:** student at SGH Warsaw School of Economics, and an active football referee since 2023 (300+ matches).
+**Szymon Sobiech:** student at SGH Warsaw School of Economics, and an active football referee since 2023 (200+ matches).

@@ -1,6 +1,6 @@
 # Do crowds bias referees? — one-page summary
 
-**Szymon Sobiech** · SGH Warsaw School of Economics · active football referee (300+ matches)
+**Szymon Sobiech** · SGH Warsaw School of Economics · active football referee (200+ matches)
 
 **Question.** Does the crowd make Premier League referees treat away teams more harshly?
 

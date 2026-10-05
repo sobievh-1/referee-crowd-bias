@@ -1,6 +1,6 @@
 # Czy tłum wpływa na sędziów? Podsumowanie na jedną stronę
 
-**Szymon Sobiech** · SGH · czynny sędzia piłkarski (ponad 300 meczów)
+**Szymon Sobiech** · SGH · czynny sędzia piłkarski (ponad 200 meczów)
 
 **Pytanie.** Czy obecność kibiców sprawia, że sędziowie Premier League karzą gości surowiej niż gospodarzy?
 

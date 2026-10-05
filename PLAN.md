@@ -1,7 +1,7 @@
 # Czy tłum zmienia decyzje sędziego?
 ### Premier League: mecze z publicznością i bez niej (pandemia COVID-19)
 
-**Autor:** Szymon Sobiech — student SGH (MIESI), sędzia piłkarski od 2023 r. (300+ meczów)
+**Autor:** Szymon Sobiech — student SGH (MIESI), sędzia piłkarski od 2023 r. (200+ meczów)
 **Wersja planu:** 2.1 (po przeglądzie literatury, 5.10.2026)
 **Tryb:** jeden ciągły sprint, ok. 40 h
 **Środowisko:** lokalnie na Macu, Claude Code, repo na GitHubie
