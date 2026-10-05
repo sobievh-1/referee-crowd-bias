@@ -1,0 +1,36 @@
+date,HomeTeam,AwayTeam,attendance,source,confidence
+2020-12-05,Chelsea,Leeds,2000,https://www.premierleague.com/match/58999,high
+2020-12-05,West Ham,Man United,2000,https://www.premierleague.com/match/59005,high
+2020-12-06,Liverpool,Wolves,2000,https://www.premierleague.com/match/59000,high
+2020-12-06,Tottenham,Arsenal,2000,https://www.premierleague.com/match/59003,high
+2020-12-07,Brighton,Southampton,2000,https://www.premierleague.com/match/58997,high
+2020-12-12,Everton,Chelsea,2000,https://www.premierleague.com/match/59008,high
+2020-12-13,Arsenal,Burnley,2000,https://www.premierleague.com/match/59006,high
+2020-12-13,Crystal Palace,Tottenham,2000,https://www.premierleague.com/match/59007,high
+2020-12-13,Fulham,Liverpool,2000,https://www.premierleague.com/match/59009,high
+2020-12-13,Southampton,Sheffield United,2000,https://www.premierleague.com/match/59014,high
+2020-12-16,Liverpool,Tottenham,2000,https://www.premierleague.com/match/59024,high
+2020-12-19,Everton,Arsenal,2000,https://www.premierleague.com/match/59030,high
+2020-12-19,Southampton,Man City,2000,https://www.premierleague.com/match/59033,high
+2020-12-20,Brighton,Sheffield United,2000,https://www.premierleague.com/match/59026,high
+2020-12-27,Liverpool,West Brom,2000,https://www.premierleague.com/match/59041,high
+2021-05-18,Brighton,Man City,7945,https://www.premierleague.com/match/59256,high
+2021-05-18,Chelsea,Leicester,7195,https://www.premierleague.com/match/59258,high
+2021-05-18,Man United,Fulham,9347,https://www.premierleague.com/match/59261,high
+2021-05-18,Southampton,Leeds,7291,https://www.premierleague.com/match/59263,high
+2021-05-19,Burnley,Liverpool,3387,https://www.premierleague.com/match/59257,high
+2021-05-19,Crystal Palace,Arsenal,6500,https://www.premierleague.com/match/59259,high
+2021-05-19,Everton,Wolves,6068,https://www.premierleague.com/match/59260,high
+2021-05-19,Newcastle,Sheffield United,10000,https://www.premierleague.com/match/59262,high
+2021-05-19,Tottenham,Aston Villa,10000,https://www.premierleague.com/match/59264,high
+2021-05-19,West Brom,West Ham,5371,https://www.premierleague.com/match/59265,high
+2021-05-23,Arsenal,Brighton,10000,https://www.premierleague.com/match/59266,high
+2021-05-23,Aston Villa,Chelsea,10000,https://www.premierleague.com/match/59267,high
+2021-05-23,Fulham,Newcastle,2000,https://www.premierleague.com/match/59268,medium
+2021-05-23,Leeds,West Brom,8000,https://www.premierleague.com/match/59269,high
+2021-05-23,Leicester,Tottenham,8000,https://www.premierleague.com/match/59270,high
+2021-05-23,Liverpool,Crystal Palace,9901,https://www.premierleague.com/match/59271,high
+2021-05-23,Man City,Everton,10000,https://www.premierleague.com/match/59272,high
+2021-05-23,Sheffield United,Burnley,5096,https://www.premierleague.com/match/59273,high
+2021-05-23,West Ham,Southampton,10000,https://www.premierleague.com/match/59274,high
+2021-05-23,Wolves,Man United,4500,https://www.premierleague.com/match/59275,high
