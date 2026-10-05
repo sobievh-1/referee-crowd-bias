@@ -2,7 +2,7 @@
 ### Premier League: mecze z publicznością i bez niej (pandemia COVID-19)
 
 **Autor:** Szymon Sobiech — student SGH (MIESI), sędzia piłkarski od 2023 r. (300+ meczów)
-**Wersja planu:** 2 (po przeglądzie luk, 5.10.2026)
+**Wersja planu:** 2.1 (po przeglądzie literatury, 5.10.2026)
 **Tryb:** jeden ciągły sprint, ok. 40 h
 **Środowisko:** lokalnie na Macu, Claude Code, repo na GitHubie
 
@@ -14,12 +14,13 @@
 |---|---|---|
 | Plan A: Ekstraklasa, plan B: ligi europejskie | **Tylko Premier League** (football-data.co.uk) | Jedyna pewna liga z sędzią, faulami i kartkami w gotowym CSV; FBref stracił dane Opta w styczniu 2026 |
 | H2: doświadczenie sędziego | **Usunięte** | Za mało sędziów (ok. 20–25), problem z liczeniem stażu sprzed okresu danych |
-| Główna miara: `card_diff` | `card_diff` **+ kartki na faul** | Kartki na faul lepiej oddzielają decyzję sędziego od zmiany gry zawodników |
+| Główna miara: `card_diff` | `card_diff` **+ kartki na faul** | Kartki na faul lepiej oddzielają decyzję sędziego od zmiany gry zawodników (miara za Reade i in. 2022) |
+| Wkład: kartki na faul jako nowa miara | **Kartki na faul przejęte z literatury, wkład gdzie indziej** | Reade, Schreyer, Singleton (2022) używają tej samej zmiennej, Endrich, Gesche (2020) kartek z faulami jako kontrolą; zob. `docs/literature.md` |
 | Kontrola siły: pozycja lub kursy | **ELO liczone z wyników** | Kursy z okresu bez kibiców już zawierają brak przewagi gospodarza („zjadają” efekt) |
 | Efekty stałe sezonu w modelu głównym | **Zmienna VAR + trend, FE sezonu tylko jako sprawdzenie** | Sezon 2020/21 to prawie w całości mecze bez kibiców, więc FE sezonu wchłonęłoby prawie cały efekt |
 | Zasada: AI tylko tłumaczy | **AI pisze i tłumaczy** | Dodany etap „umiem to wyjaśnić” przed publikacją |
 
-**Mój wkład** (skoro Premier League jest dobrze zbadana): kartki na faul jako miara decyzji sędziego, rozkład testów placebo zamiast jednego, jawnie policzona moc oraz perspektywa czynnego sędziego.
+**Mój wkład** (skoro Premier League jest dobrze zbadana): kartki na faul (miara za Reade i in. 2022 oraz Endrich, Gesche 2020) zastosowane do Premier League z prawie całym sezonem 2020/21 bez kibiców; wnioskowanie przy małej liczbie sędziów (wild cluster bootstrap); rozkład testów placebo zamiast jednego; jawnie policzona moc (ważne, bo Nevill i in. 2023 pokazują, że w Premier League efekt jest najmniejszy z angielskich lig) oraz perspektywa czynnego sędziego.
 
 ---
 
@@ -79,7 +80,8 @@ Dokładne daty i listę meczów z częściową frekwencją ustalić na podstawie
 4. **Sprawdzenia odporności:**
    - wersja z FE sezonu (efekt identyfikowany głównie z restartu 2019/20, opisać to wprost),
    - wykluczenie meczów `partial`,
-   - tylko sezony z VAR (2019/20–2022/23).
+   - tylko sezony z VAR (2019/20–2022/23),
+   - trzecia wersja „kartek na faul”: model Poissona dla żółtych kartek z log(faule) jako offsetem (obok różnicy ilorazów jak u Reade i in. i fauli jako kontroli jak u Endrich, Gesche).
 5. **Placebo (rozkład):** na danych sprzed pandemii każdy sezon od 2014/15 do 2018/19 kolejno udaje „sezon bez kibiców”. Wynik prawdziwy porównuję z rozkładem efektów placebo.
 6. **Moc:** minimalny wykrywalny efekt ≈ 2,8 × SE (moc 80%, α = 0,05). Napisać przy wyniku, jaki efekt byłbym w stanie zobaczyć.
 
@@ -160,7 +162,7 @@ referee-crowd-bias/
 | Restart 2020 miał inne warunki (5 zmian, przerwy na picie, zagęszczony terminarz) | Opisać jako ograniczenie; sprawdzenie tylko na 2020/21 |
 | Mało fauli w meczu → zaszumione `cpf_diff` | Opcjonalnie model na poziomie drużyna-mecz: kartki ~ faule × gość × ghost |
 | Niepewne daty meczów z częściową frekwencją | Sprawdzenie z wykluczeniem `partial` |
-| Premier League dobrze zbadana | Wkład = kartki na faul, rozkład placebo, moc, perspektywa sędziego |
+| Premier League dobrze zbadana | Wkład = pełny sezon ghost w Premier League, wnioskowanie przy małej liczbie klastrów, rozkład placebo, moc, perspektywa sędziego; kartki na faul cytowane jako miara z literatury |
 
 ---
 
