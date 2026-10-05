@@ -1,0 +1,15 @@
+# Data handling
+pandas==3.0.6
+numpy==2.5.3
+requests==2.34.2
+
+# Statistics
+statsmodels==0.15.0
+wildboottest==0.3.2
+
+# Plots
+matplotlib==3.11.2
+
+# Notebooks
+jupyterlab==4.6.4
+ipykernel==7.4.0
