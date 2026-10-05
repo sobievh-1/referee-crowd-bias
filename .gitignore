@@ -13,3 +13,6 @@ __pycache__/
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Personal interview prep (kept local, not published)
+docs/interview_prep_pl.md
